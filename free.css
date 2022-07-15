@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --maincolor: #66FCFF;
+    --pcolor: #C5C6C7;
+    --darkcolor: #45A29E;
+    --black: black;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: var(--maincolor);
+    display: flex;
+    color: var(--black);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat', sans-serif;
+
+}
+.li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 20px;
+}
+.ul{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+li{
+    list-style: none;
+   
+}
+.imgbackground{
+    background-image: url(img/istockphoto-1284529542-612x612.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    ;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.header{
+    font-size: 150px;
+    color: var(--maincolor);
+    font-family: Arial, Helvetica, sans-serif
+}
+.info{
+    color: white;
+    width: 90%;
+    max-width: 600px;
+    line-height: 23px;
+}
+.name{
+    padding: 0px 0px 10px;
+    color: white;
+    display: flex;
+}
+.button{
+    width: 190px;
+    height: 40px;
+    margin: 20px 0px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid var(--maincolor);
+    font-size: 1.10rem;
+    box-shadow: rgba(15, 164, 205, 0.3) 0px 19px 38px, rgba(46, 34, 55, 0.22) 0px 15px 12px;
+}
+.button:hover{
+    background-color: var(--maincolor);
+    color: black;
+    transition: .5s;
+}
+.li:hover{
+    background-color: white;
+    transition: .3s;
+}
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.me{
+    margin: 40px 0px;   
+    border-bottom: 3px var(--darkcolor) solid;
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+    padding: 10px 0px;
+
+}
+.grid-container{
+    display: grid;
+    width: 90%;
+    height: 600px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    max-width: 800px;
+    gap: 20px;
+
+}
+@media(max-width: 590px){
+    .grid-container{
+        height: 900px;
+        display: grid;
+        width: 80%;
+        height: 1200px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        max-width: 800px;
+        gap: 20px;
+    }
+    .title{
+        font-size: 12px;
+        
+    }
+
+    .header{
+        font-size: 100px;
+    }
+}
+.title{
+    display: flex;
+}
+.code{
+    font-size: 16px;
+    color: transparent;
+    transition: .3s ease-out;
+
+}
+.grid1:hover .code{
+    color: wheat;
+
+}
+.grid2:hover .code{
+    color: wheat;
+
+}
+.grid3:hover .code{
+    color: wheat;
+
+}
+.grid4:hover .code{
+    color: wheat;
+
+}
+.grid1{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    border-radius: 4px;
+}
+.grid2{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
+}
+.grid3{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
+}
+.grid4{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
+}
+.proimg1{
+    background-image: url(img/tribute.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+
+}
+.proimg2{
+    background-image: url(img/beatport.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+
+}
+.proimg3{
+    background-image: url(img/landing.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+
+}
+.proimg4{
+    background-image: url(img/form.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+
+}
+.title{
+    font-size: .8rem;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--maincolor);
+    font-family: "Montserrat";
+}
+.button2{
+    width: 190px;
+    height: 40px;
+    margin: 40px 0px;
+    background-color: transparent;
+    color: black;
+    border: 3px solid var(--maincolor);
+    font-size: 1.10rem;
+    box-shadow: rgba(15, 164, 205, 0.3) 0px 19px 38px, rgba(46, 34, 55, 0.22) 0px 15px 12px;
+}
+.button2:hover{
+    background-color: var(--maincolor);
+    transition: .5s ease-out;
+    
+}
+.contacts{
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(70deg, #3a3d40 -180%, #181719 100%);
+
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    flex-direction: column;
+    
+}
+.contacts  h1{
+    color: var(--maincolor);
+    font-size: 3rem;
+    text-align: center;
+}
+.contacts p{
+    text-align: center;
+    padding: 5px 0px 20px;
+}
+.conflex{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
+}
+.facebook{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url(img/icons8-facebook-50.png);
+    margin: 0px 10px;
+}
+.facebook:hover{
+    background-color: #4267B2;
+    transition: .3s ease-out;
+    transform: scale(1.1) rotate(365deg);
+}
+.instagram{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 30%;
+    background-size: cover;
+    background-image: url(img/icons8-instagram-60.png);
+    margin: 0px 10px;
+    
+}
+.instagram:hover{
+    transition: .3s ease-out;
+    transform: scale(1.1) rotate(365deg);
+    background-color: #d6249f;
+}
+.mail{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 30%;
+    background-size: cover;
+    background-image: url(img/icons8-mail-50.png);
+    margin: 0px 10px;
+    
+}
+.mail:hover{
+    transition: .3s ease-out;
+    transform: scale(1.1) rotate(365deg);
+    background-color: var(--maincolor);
+}
+.line{
+    width: 95%;
+    height: 10px;
+    border-bottom: var(--maincolor) 3px solid ;
+    margin: 30px 0px 20px;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    bottom: 0px;
+    justify-content: center;
+    justify-self: flex-end;
+    flex-direction: column;
+}
+.pp{
+    text-align: center;
+}
+.aaaa{
+    color: var(--darkcolor);
+    transition: .3s ease-out;
+}
+
+.aaaa:hover{
+    color: var(--maincolor);
+
+}
